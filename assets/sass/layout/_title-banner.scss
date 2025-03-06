@@ -1,0 +1,10 @@
+.title-banner{
+    background-image: url(../media/banner/title-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: clamp(140px, 15.625vw, 600px);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}   

@@ -1,0 +1,12 @@
+.about-sec{
+    .about-image-container{
+        img{
+            box-shadow: clamp(12px, 0.833vw, 32px) clamp(12px, 0.833vw, 32px) 0px 0px $mint-forest;
+            border-radius: $br-12;
+            width: 100%;
+            @include media-query(576px){
+                width: 95%;
+            }
+        }
+    }   
+}

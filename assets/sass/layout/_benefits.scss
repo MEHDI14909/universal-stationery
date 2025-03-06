@@ -1,0 +1,13 @@
+.benefits-sec{
+    .benefit-block{
+        display: flex;
+        align-items: flex-start;
+        gap: $gap-16;
+        .benefit-icon{
+            svg{
+                width: clamp(28px, 2.083vw, 84px);
+                height: clamp(28px, 2.083vw, 84px);
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+footer {
+    padding: clamp(32px, 2.5vw, 64px) 0 clamp(16px, 1.25vw, 40px);
+    .newsletter-container{
+        position: relative;
+        border: 1px solid $light-gray;
+        border-radius: 48px ;
+
+        .newsletter-block{
+            position: relative;
+            input{
+                border: 0;
+                width: 100%;
+                background: transparent;
+                padding: clamp(12px, 0.833vw, 24px);
+                color: $black;
+                &:focus-visible{
+                    outline: 0;
+                    border: 0;
+                }
+                &:focus{
+                    outline: 0;
+                    border: 0;
+                }
+                &:-webkit-autofill,
+                &:-webkit-autofill:focus {
+                    transition: background-color 600000s 0s, color 600000s 0s;
+                }
+            }
+            svg{
+                position: absolute;
+                left: 0%;
+                top: 50%;
+                transform: translate(75%, -50%);
+            }
+        }
+        button{
+            position: absolute;
+            right: 0%;
+            top: 50%;
+            transform: translate(-5%, -50%);
+            border: 0;  
+            font-weight: 500;
+            border-radius: 48px;
+            background: $black;
+            color: $white;
+            transition: $transition;
+            padding: clamp(6px, 0.521vw, 32px) clamp(20px, 1.667vw, 64px);
+            &:hover{
+                background: $accent-1;
+                svg{
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+
+    .payment-cards{
+        .card-block{
+            width: clamp(32px, 2.5vw, 96px);
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+

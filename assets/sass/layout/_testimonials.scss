@@ -1,0 +1,44 @@
+
+.testimonials-sec{
+    
+    .slider-wrapper{
+        background: url(../media/banner/testimonial-bg.png) no-repeat;
+        background-position: center;
+        background-size: contain;
+        padding: clamp(24px, 2.5vw, 96px) 0;
+        @include media-query(576px){
+            background-position: center;
+            background-size: cover;
+        }
+        .testimonail-block{
+            background: $white;
+            border-radius: $br-12;
+            padding: clamp(12px, 1.25vw, 48px);
+            margin: 0 12px;
+            p{
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 5;
+                line-clamp: 5; 
+                -webkit-box-orient: vertical;
+            }
+            .user-info{
+                display: flex;
+                align-items: center;
+                gap: $gap-12;
+                .user-img{
+                    img{
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.rating-star{
+    svg{
+        width: clamp(10px, 0.729vw, 32px);
+        height: clamp(10px, 0.729vw, 32px);
+    }
+}

@@ -1,0 +1,71 @@
+.promotion-sec{
+    .promotion-card{
+        .image-box{
+            border-radius: $br-12;
+            overflow: hidden;
+            width: 100%;
+            img{
+                width: 100%;
+                object-fit: cover;
+                border-radius: $br-12;
+                -webkit-transition: all 0.35s linear 0s;
+                transition: all 0.35s linear 0s;
+            }
+        }
+        .text-box{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h6{
+                padding-left: 20px;
+                color: $black;
+                transition: $transition
+            }
+            .arrow-btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: clamp(40px, 3.33vw, 120px);
+                height: clamp(40px, 3.33vw, 120px);
+                border-radius: 50%;
+                border: 1px solid $black;
+                background: transparent;
+                transition: $transition;
+                svg{
+                    width: clamp(22px, 1.458vw, 64px);
+                    height: clamp(22px, 1.458vw, 64px);
+                    transition: $transition;
+                    path{
+                        transition: $transition;
+                    }
+                }
+            }
+        }
+        &:hover{
+            .image-box {
+                img{
+                    -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+                    -webkit-transition: all 0.35s linear 0s;
+                    transition: all 0.35s linear 0s;
+                }
+            }
+            h6{
+                color: $accent-2;
+            }
+            .arrow-btn{
+                background: $accent-2;
+                border: 1px solid $accent-2;
+
+                svg{
+                    transform: rotate(45deg);
+                    transition: $transition;
+                    path{
+                        stroke: $white;
+                        transition: $transition;
+                    }
+                }
+            }
+        }
+    }
+}

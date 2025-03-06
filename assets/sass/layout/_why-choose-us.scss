@@ -1,0 +1,12 @@
+.why-choose-us{
+    .wcu-block{
+        text-align: center;
+        padding: 0 12px;
+        .icon-box{
+            svg{
+                width: clamp(40px, 3.33vw, 160px);
+                height: clamp(40px, 3.33vw, 160px);
+            }
+        }
+    }
+}

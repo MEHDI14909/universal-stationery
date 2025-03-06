@@ -1,0 +1,28 @@
+.contact-section {
+    .opening-hours{
+        padding: clamp(12px, 1.25vw, 40px);
+        .contact-box{
+            padding: clamp(12px, 1.25vw, 40px);
+            border-radius: $br-8;
+            border: 1px solid $medium-black;
+            svg{
+                width: clamp(12px, 0.853vw, 40px);
+                height: clamp(12px, 0.833vw, 40px);
+            }
+        }
+    }
+    .form-container{
+        height: 100%;
+        padding: clamp(12px, 1.25vw, 40px);
+        button {
+            border: 0;
+        }
+    }
+    .map{
+        iframe{
+            width: 100%;
+            height: clamp(220px, 30.208vw, 1250px);
+            border-radius: $br-12;
+        }
+    }
+}
